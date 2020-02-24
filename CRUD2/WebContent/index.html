@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="yo.css"/>
+</head>
+<body>
+    <h1 align="center">Add new Employee</h1>
+    <table align="center">
+        <form action="SaveServlet" method="POST">
+            <tr>
+                <td>Name:</td><td><input type="text" name="name"/></td>
+            </tr>
+            <tr>
+                <td>Password:</td><td><input type="password" name="password"/></td>
+            </tr>
+            <tr>
+                <td>Email:</td><td><input type="email" name="email"/></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country" style="width: 147px">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Save Employee"/></td>
+            </tr>
+        </form>
+    </table>
+    <h3 align="center"><a href="ViewServlet">View Employee</a></h3>
+</body>
+</html>
